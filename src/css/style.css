@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+body {
+    height: 100vh;
+    font-family: 'Manrope', sans-serif;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    padding: 5% 15%;
+    background-color: var(--light-grayish-blue);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.drawers {
+    width: 28.1rem;
+    border-radius: 15px 0 0 15px;
+}
+
+.info {
+    height: 22.5rem;
+    padding: 2.5rem 3.1rem;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 0 15px 15px 0;
+}
+
+.info h1 {
+    font-size: 1.5rem;
+    color: var(--very-dark-grayish-blue);
+    margin-bottom: 0.9rem;
+}
+
+.main-paragraph {
+    color: var(--very-dark-grayish-blue);
+}
+
+.testimonial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.testimonial button {
+    display: flex;
+    padding: 0.6rem;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.testimonial button:hover {
+    cursor: pointer;
+}
+
+.bg-active {
+    background-color: var(--very-dark-grayish-blue);
+}
+
+.testimonial button img {
+    width: 1.25rem;
+}
+
+.seta-branca {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+
+.avatar-info {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.avatar {
+    width: 3.75rem;
+    border-radius: 50%;
+}
+
+.avatar-info h2 {
+    font-size: 1rem;
+    color: var(--desatured-dark-blue);
+}
+
+.avatar-info span {
+    font-size: 0.9rem;
+    color: var(--grayish-blue);
+}
+
+.balao {
+    margin: 0 auto; 
+    background: var(--very-dark-grayish-blue);
+    border-radius: 15px;
+    display: none;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    height: auto;
+    color: var(--white);
+    padding: 1.25rem;
+    position: absolute;
+    transition: 0.3s;
+    right: -6%;
+    top: 45%;
+}
+
+.balao::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid var(--very-dark-grayish-blue);
+    bottom: -1.25rem;
+    left: 45%;
+}
+
+.balao p {
+    color: var(--light-grayish-blue);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.balao a {
+    color: var(--light-grayish-blue);
+}
+
+.aparecer {
+    display: flex;
+}
